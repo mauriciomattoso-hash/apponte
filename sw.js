@@ -1,0 +1,1 @@
+const C='california26-v2',A=['./','./index.html','./style.css','./app.js','./meta.js','./places1.js','./places2.js','./extras.js','./manifest.webmanifest'];self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(A))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
