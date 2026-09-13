@@ -213,3 +213,9 @@ body[data-region="sanfrancisco"]{--hero-bg:url("https://unsplash.com/photos/Jdoy
  .reservationItem{padding-left:72px!important}
  .reservationItem:before{width:60px}
 }
+
+/* v21 — checklist removed, rebalance lower dashboard */
+.faithfulGrid .reservationPanel{grid-column:1;grid-row:1}
+.faithfulGrid .tripBudget{grid-column:2;grid-row:1}
+.faithfulGrid .musicPanel{grid-column:1 / -1;grid-row:2}
+@media(max-width:960px){.faithfulGrid .reservationPanel,.faithfulGrid .tripBudget,.faithfulGrid .musicPanel{grid-column:1!important;grid-row:auto!important}}
